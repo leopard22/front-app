@@ -1,0 +1,9 @@
+<p>
+  type works!
+</p>
+<div class="form-group">
+  <label for="genre-form">Genre</label>
+  <select class="form-control" id="genre-form" required>
+    <option *ngFor="let genre of genres" [value]="genre.id">{{genre.typename}}</option>
+  </select>
+</div>

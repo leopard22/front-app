@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Song } from '../../entity/song';
+import { Type } from '../../entity/genre';
 
 @Component({
   selector: 'app-songs',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./songs.component.css']
 })
 export class SongsComponent implements OnInit {
+
+  song: Song;
+  genre: Type;
 
   constructor() { }
 
